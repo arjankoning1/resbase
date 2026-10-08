@@ -1,0 +1,108 @@
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------
+                                                                 
+  General methodology: The global approach considered in this    
+          work is presented in the following papers:             
+          (1) Modern nuclear data evaluation with the TALYS      
+              code system, A.J. Koning and D. Rochman,           
+              A.J. Koning and D. Rochman,                        
+              Nuclear Data Sheets 113 (2012) 2841.               
+          (2) TENDL: Complete Nuclear Data Library for           
+              Innovative Nuclear Science and Technology,         
+              A.J. Koning, D. Rochman, J.Ch Sublet, N. Dzysiuk,  
+              M. Fleming and S. van der Marck,                   
+              Nuclear Data Sheets 155 (2019) 1.                  
+                                                                 
+  MF2:  Resolved resonance range  (RRR)                          
+       The RRR was generated with TARES-1.8 , compiled on         
+       Oct  7 2026, 09:32:19 at Villigen   , Switzerland. The RRR
+       expands from 0 to 2.124843E+3 eV. A total of 
+       3 l-values are used and 99 resonances. The resonance 
+       formalism is multi-level Breit Wigner (MLBW).
+       The TARES database for the measured resonances is         
+        ->  default up to 21.301325 eV.                                         
+       Above this energy, the ladder approach is used.           
+       The ladder approach from the CALENDF code is used to      
+       generate statistical resonances in the unresolved         
+       resonance range. Therefore, the URR is translated into    
+       resolved resonance range. Explanations about the method   
+       can be found in the CALENDF manual: CEA-Report CEA-R-6277 
+       "CALENDF-2010: User manual" by J.C. Sublet, P. Ribon and
+       M. Coste-Delcaux.                                         
+       The method of creating statistical resonances in the      
+       URR region is described in: "From average parameters to  
+       statistical resolved resonances", D. Rochman et al.,     
+       Annals of Nucl. Ene. 51 (2013) 60.                        
+       The s-wave average level spacing is 21.301325 eV and  
+       the s-wave neutron strength is 0.000053 1e-4.        
+                                                                 
+  MF33 in the resonance range:                                   
+  The MF33 in the resonance range is obtained by using a number  
+  of MF2 random files. There is therefore a consistency          
+  between the MF2 random and the MF33.                           
+  MF32:                                                          
+  The MF32 contains the resonance parameters, uncertainties and  
+  some correlation. These values are used to generate random     
+  MF2, taking advantage of the code ENDSAM from L. Plevnik and   
+  G. Zerovnik from JSI, Slovenia (thanks to A. Trkov, IAEA).     
+                                                                 
+                                                                 
+               Average parameters from INTER-8.05                
+                                                                 
+     ****************************************************        
+     *   Thermal (n,g) xs =  9.974620E+00 b. (MF2 only) *        
+     *   RI      (n,g)    =  3.243920E+01 b. (MF2 only) *        
+     *   MACS 30 keV      =  1.385400E-01 b. (MF2 only) *        
+     *                                                  *        
+     *   Thermal (n,el) xs = 8.422850E+00 b. (MF2 only) *        
+     *   RI      (n,el)    = 7.701110E+01 b. (MF2 only) *        
+     ****************************************************        
+                                                                 
+                                                                 
+                                                                 
+               Plots of different cross sections                 
+                                                                 
+                                                            
+                                                           
+                            Rh113(n,el)                    
+      10000 +------------------------------------------+   
+            |+ +      +      +    A+AAAAA +     +     +|   
+        100 |AAAAAAAAAAAAAA       A AAAAAn,el)    A  ++|   
+          1 |++           AAAAAAAAAAAAAAA            ++|   
+            |+                                        +|   
+       0.01 |++                                      ++|   
+     0.0001 |++                                      ++|   
+         -6 |+                                        +|   
+     1x10   |++                                      ++|   
+         -8 |+                                        +|   
+     1x1010 |++                                      ++|   
+    1x10    |++                                      ++|   
+        -12 |+ +      +      +     +      +     +     +|   
+    1x10    +------------------------------------------+   
+           0.000100.010001.000100.001000010100000000.000000
+                            Energy (eV)                    
+                                                           
+                                                            
+                                                           
+                            Rh113(n,g)                     
+     10000 +-------------------------------------------+   
+           |+  +      +      +      AAA     +      +  +|   
+      1000 |AA                      AAAAAAn,g)    A  +-|   
+       100 |+AAAAA                  AAAAAAA          ++|   
+           |+    AAAAAA             AAAAAAA           +|   
+        10 |-+        AAAAA         AAAAAAA          +-|   
+         1 |++            AAAAA    AAAAAAAA          ++|   
+           |+                 AAA  AAAAAAAAAAA        +|   
+       0.1 |++                  AAAAAAAAAAA  AAA     ++|   
+           |+                     AAAAAAAAA     AAA   +|   
+      0.01 |-+                       AAAAA        AAA+-|   
+     0.001 |++                                      AAA|   
+           |+  +      +      +       +      +      +  A|   
+    0.0001 +-------------------------------------------+   
+           0.000100.010001.00000100.0010000.1000000.000000 
+                            Energy (eV)                    
+                                                           
+                                                                 
+                                                                 
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------

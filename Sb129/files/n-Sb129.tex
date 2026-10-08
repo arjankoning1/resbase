@@ -1,0 +1,25 @@
+\documentclass[preview]{standalone} 
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage[left=0.25in]{geometry}
+\begin{document} 
+{\small 
+{\noindent 
+\begin{tabular}{L{1.2cm}C{1.2cm} C{0.3cm}C{0.5cm} C{1.4cm}C{1.4cm} C{1.4cm}C{1.4cm}} 
+\hline 
+ E         &   $\pm \Delta$E  &   l   &  J  & $\Gamma_n$  & $\pm \Delta\Gamma_n$ & $\Gamma_\gamma$  & $\pm \Delta\Gamma_\gamma$  \\ 
+    eV     &        eV          &       &     &     eV       &         eV              &       eV     &         eV               \\ 
+\hline 
+  -541.82  &  0.11  & 0     &  3 &  15.4  & 0.245  & 0.0189 &  0.0120   \\ 
+  -530.19  &  0.11  & 2     &  4 &  1.418e-07  & 0  & 0.181 &  0.115   \\ 
+  -144.49  &  0.03  & 1     &  4 &  2.852e-04  & 5.000e-06  & 0.235 &  0.149   \\ 
+  55.87  &  0.01  & 0     &  3 &  4.95  & 0.0785  & 0.0189 &  0.0120   \\ 
+  67.51  &  0.01  & 2     &  4 &  8.203e-10  & 0  & 0.181 &  0.115   \\ 
+  453.20  &  0.09  & 1     &  4 &  1.583e-03  & 2.500e-05  & 0.235 &  0.149   \\ 
+\hline 
+\end{tabular} 
+} % end small 
+\end{document} 
