@@ -15,7 +15,7 @@
 
   ---------------------------------------------
    Compilation information:
-   Compiled on:         Oct  7 2026, 09:32:19
+   Compiled on:         Oct  8 2026, 18:36:06
    Compiled by:         koning
    Compiler version:    clang++ - 21.0.0
    Source location:     /Users/koning/tares-1.8/source/Module/
@@ -33,7 +33,7 @@
   ---------------------------------------------
 
 
- Starting time: Wed Oct  7 10:05:02 2026
+ Starting time: Fri Oct  9 12:53:09 2026
  ... inputs directory found (/Users/koning/tares-1.8/source/Module//../../inputs/).
  ... It will be used for resonance parameters 
  ... ###############################################
@@ -119,7 +119,7 @@ Thermal file; Could not open file /Users/koning/tares-1.8/source/Module//../../i
  3. Scattering radius (local compilation): 6.17069 fm +/- 0.129584 fm
       .......................................
       ... Thermal capture cross sections: ...
- 4. Thermal (n,g) cross section from systematics: 21.49 +/- 15.043 b.
+ 4. Thermal (n,g) cross section from systematics (TALYS, urr.dat): 21.4883 +/- 15.0418 b.
  5. Thermal (n,g) cross section from compilation (Firestone-2022 average on element Ag): 63.7 +/- 0.6 b.
  6. Thermal (n,g) cross section from compilation (Firestone-2022 final on element Ag): 63.8 +/- 0.5 b.
  7. Thermal (n,g) cross section from TENDL-2023: 116 b.
@@ -217,7 +217,7 @@ Thermal file; Could not open file /Users/koning/tares-1.8/source/Module//../../i
  ... run SIGMA1 at 3.000000E+02 K.
 
  ============== INTER values at 300 Kelvin ==============
- Thermal (n,g) xs =  17.6114 b. (meas/sys: 21.49 b.) (warning: comparison to be done at 296 or 300 K)
+ Thermal (n,g) xs =  17.6114 b. (meas/sys: 21.4883 b.) (warning: comparison to be done at 296 or 300 K)
  Th Maxw (n,g) xs =  17.686 b. (thermal Maxwellian value)
  Westcott factor  =  1.00423
  RI      (n,g)    =  53.6725 b. (meas or sys: - b.)
@@ -242,7 +242,7 @@ Thermal file; Could not open file /Users/koning/tares-1.8/source/Module//../../i
  Ave. S       L2  =  1.66948e-05 eV
  =========================================
  Calculated capture integral   53.6725 b.
- ... ratio C/E thermal (n,g): 8.195160E-01
+ ... ratio C/E thermal (n,g): 8.195824E-01
  ...................................................... 
  ... Adjustment to the thermal cross section : stop ...
  ...................................................... 
@@ -279,7 +279,7 @@ Thermal file; Could not open file /Users/koning/tares-1.8/source/Module//../../i
  ... The keyword temperature is zero, no Doppler broadening for the MACS
 
  ============== INTER values at 0 Kelvin ==============
- Thermal (n,g) xs =  17.6028 b. (meas/sys: 21.49 b.) (warning: comparison to be done at 296 or 300 K)
+ Thermal (n,g) xs =  17.6028 b. (meas/sys: 21.4883 b.) (warning: comparison to be done at 296 or 300 K)
  Th Maxw (n,g) xs =  17.585 b. (thermal Maxwellian value)
  Westcott factor  =  0.99898
  RI      (n,g)    =  53.6141 b. (meas or sys: - b.)
@@ -307,17 +307,19 @@ Thermal file; Could not open file /Users/koning/tares-1.8/source/Module//../../i
 
  ... grouping is not optimum, change to 70 groups
  ... Produce MF33 based on MF32 and 6 random files
+ ... MF3 of n-Ag100.reconst (3 sections) added to the files for ENDSAM
  ... run endsam for 6 in groups of 1 global run
  ... run endsam from 1 to 6
+ ... random files: total width GT set to Gn+Gg+Gf (258 resonances in 6 files)
  ... reorder resonance position after endsam (sampling)
  ... preparing the vectors  ... done
- ... nominal file 0 Cap(th)  ave= 1.760E+01 b. +/- 0.00 % || Ela(th) ave= 5.251E+00 b. +/- 0.00 % || RIcap ave= 5.15E+01 b. +/- 0.00 % || Macs30 ave= 4.35E+01 b. +/- 0.00 % || Gn^0(l=0) ave= 2.807E-03 +/- 0.00 % Gn^0(l=1) ave= 3.465E-02 +/- 0.00 % Gn^0(l=2) ave= 8.110E-03 +/- 0.00 % Gn^0(l=3) ave= 0.000E+00 +/- 0.00 % || Gtotal(l=0) ave= 4.413E-01 +/- 0.00 % Gtotal(l=1) ave= 4.432E-01 +/- 0.00 % Gtotal(l=2) ave= 4.011E-01 +/- 0.00 % Gtotal(l=3) ave= 0.000E+00 +/- 0.00 %  % || Gg(l=0) ave= 4.164E-01 +/- 0.00 % Gg(l=1) ave= 4.432E-01 +/- 0.00 % Gg(l=2) ave= 4.011E-01 +/- 0.00 % Gg(l=3) ave= 0.000E+00 +/- 0.00 %  % || D(l=0) ave= 2.277E+01 +/- 0.00 % D(l=1) ave= 9.486E+00 +/- 0.00 % D(l=2) ave= 1.138E+02 +/- 0.00 % D(l=3) ave= 0.000E+00 +/- 0.00 %  % || S(l=0) ave= 7.030E-05 +/- 0.00 % S(l=1) ave= 6.394E-04 +/- 0.00 % S(l=2) ave= 1.669E-05 +/- 0.00 % S(l=3) ave= 0.000E+00 +/- 0.00 % 
- ... random file  1 Cap(th)  ave= 1.768E+01 b. +/- 0.44 % || Ela(th) ave= 4.735E+00 b. +/- 10.88 % || RIcap ave= 5.11E+01 b. +/- 0.66 % || Macs30 ave= 4.30E+01 b. +/- 1.27 % || Gn^0(l=0) ave= 2.801E-03 +/- 0.24 % Gn^0(l=1) ave= 3.918E-02 +/- 11.56 % Gn^0(l=2) ave= 1.046E-02 +/- 22.45 % Gn^0(l=3) ave= 0.000E+00 +/- 0.00 % || Gtotal(l=0) ave= 4.413E-01 +/- 0.00 % Gtotal(l=1) ave= 4.432E-01 +/- 0.00 % Gtotal(l=2) ave= 4.011E-01 +/- 0.00 % Gtotal(l=3) ave= 0.000E+00 +/- 0.00 %  % || Gg(l=0) ave= 4.304E-01 +/- 3.25 % Gg(l=1) ave= 4.870E-01 +/- 9.00 % Gg(l=2) ave= 4.456E-01 +/- 9.99 % Gg(l=3) ave= 0.000E+00 +/- 0.00 %  % || D(l=0) ave= 2.277E+01 +/- 0.00 % D(l=1) ave= 9.486E+00 +/- 0.00 % D(l=2) ave= 1.138E+02 +/- 0.00 % D(l=3) ave= 0.000E+00 +/- 0.00 %  % || S(l=0) ave= 7.014E-05 +/- 0.22 % S(l=1) ave= 7.231E-04 +/- 11.58 % S(l=2) ave= 2.153E-05 +/- 22.45 % S(l=3) ave= 0.000E+00 +/- 0.00 % 
- ... random file  2 Cap(th)  ave= 1.782E+01 b. +/- 1.19 % || Ela(th) ave= 5.207E+00 b. +/- 15.16 % || RIcap ave= 5.12E+01 b. +/- 0.60 % || Macs30 ave= 4.31E+01 b. +/- 1.10 % || Gn^0(l=0) ave= 2.804E-03 +/- 0.28 % Gn^0(l=1) ave= 3.597E-02 +/- 16.28 % Gn^0(l=2) ave= 8.914E-03 +/- 32.59 % Gn^0(l=3) ave= 0.000E+00 +/- 0.00 % || Gtotal(l=0) ave= 4.413E-01 +/- 0.00 % Gtotal(l=1) ave= 4.432E-01 +/- 0.00 % Gtotal(l=2) ave= 4.011E-01 +/- 0.00 % Gtotal(l=3) ave= 0.000E+00 +/- 0.00 %  % || Gg(l=0) ave= 4.123E-01 +/- 6.81 % Gg(l=1) ave= 4.678E-01 +/- 9.60 % Gg(l=2) ave= 4.086E-01 +/- 15.60 % Gg(l=3) ave= 0.000E+00 +/- 0.00 %  % || D(l=0) ave= 2.277E+01 +/- 0.00 % D(l=1) ave= 9.486E+00 +/- 0.00 % D(l=2) ave= 1.138E+02 +/- 0.00 % D(l=3) ave= 0.000E+00 +/- 0.00 %  % || S(l=0) ave= 7.024E-05 +/- 0.26 % S(l=1) ave= 6.640E-04 +/- 16.26 % S(l=2) ave= 1.835E-05 +/- 32.60 % S(l=3) ave= 0.000E+00 +/- 0.00 % 
- ... random file  3 Cap(th)  ave= 1.991E+01 b. +/- 18.16 % || Ela(th) ave= 5.038E+00 b. +/- 14.76 % || RIcap ave= 5.25E+01 b. +/- 4.13 % || Macs30 ave= 4.38E+01 b. +/- 2.73 % || Gn^0(l=0) ave= 2.937E-03 +/- 7.83 % Gn^0(l=1) ave= 3.709E-02 +/- 14.64 % Gn^0(l=2) ave= 9.450E-03 +/- 28.38 % Gn^0(l=3) ave= 0.000E+00 +/- 0.00 % || Gtotal(l=0) ave= 4.418E-01 +/- 0.20 % Gtotal(l=1) ave= 4.432E-01 +/- 0.00 % Gtotal(l=2) ave= 4.011E-01 +/- 0.00 % Gtotal(l=3) ave= 0.000E+00 +/- 0.00 %  % || Gg(l=0) ave= 4.446E-01 +/- 13.71 % Gg(l=1) ave= 4.457E-01 +/- 12.26 % Gg(l=2) ave= 4.157E-01 +/- 13.60 % Gg(l=3) ave= 0.000E+00 +/- 0.00 %  % || D(l=0) ave= 2.419E+01 +/- 10.19 % D(l=1) ave= 9.486E+00 +/- 0.00 % D(l=2) ave= 1.138E+02 +/- 0.00 % D(l=3) ave= 0.000E+00 +/- 0.00 %  % || S(l=0) ave= 7.008E-05 +/- 0.44 % S(l=1) ave= 6.846E-04 +/- 14.62 % S(l=2) ave= 1.945E-05 +/- 28.39 % S(l=3) ave= 0.000E+00 +/- 0.00 % 
- ... random file  4 Cap(th)  ave= 1.920E+01 b. +/- 18.37 % || Ela(th) ave= 5.185E+00 b. +/- 14.02 % || RIcap ave= 5.23E+01 b. +/- 3.78 % || Macs30 ave= 4.38E+01 b. +/- 2.44 % || Gn^0(l=0) ave= 3.020E-03 +/- 8.76 % Gn^0(l=1) ave= 3.594E-02 +/- 14.96 % Gn^0(l=2) ave= 8.888E-03 +/- 29.82 % Gn^0(l=3) ave= 0.000E+00 +/- 0.00 % || Gtotal(l=0) ave= 4.421E-01 +/- 0.22 % Gtotal(l=1) ave= 4.432E-01 +/- 0.00 % Gtotal(l=2) ave= 4.011E-01 +/- 0.00 % Gtotal(l=3) ave= 0.000E+00 +/- 0.00 %  % || Gg(l=0) ave= 4.511E-01 +/- 12.43 % Gg(l=1) ave= 4.587E-01 +/- 12.07 % Gg(l=2) ave= 4.404E-01 +/- 16.06 % Gg(l=3) ave= 0.000E+00 +/- 0.00 %  % || D(l=0) ave= 2.504E+01 +/- 11.13 % D(l=1) ave= 9.486E+00 +/- 0.00 % D(l=2) ave= 1.138E+02 +/- 0.00 % D(l=3) ave= 0.000E+00 +/- 0.00 %  % || S(l=0) ave= 7.007E-05 +/- 0.40 % S(l=1) ave= 6.633E-04 +/- 14.94 % S(l=2) ave= 1.830E-05 +/- 29.83 % S(l=3) ave= 0.000E+00 +/- 0.00 % 
- ... random file  5 Cap(th)  ave= 1.896E+01 b. +/- 17.24 % || Ela(th) ave= 5.398E+00 b. +/- 15.13 % || RIcap ave= 5.15E+01 b. +/- 4.99 % || Macs30 ave= 4.30E+01 b. +/- 4.70 % || Gn^0(l=0) ave= 2.985E-03 +/- 8.51 % Gn^0(l=1) ave= 3.461E-02 +/- 16.58 % Gn^0(l=2) ave= 8.284E-03 +/- 33.44 % Gn^0(l=3) ave= 0.000E+00 +/- 0.00 % || Gtotal(l=0) ave= 4.420E-01 +/- 0.22 % Gtotal(l=1) ave= 4.432E-01 +/- 0.00 % Gtotal(l=2) ave= 4.011E-01 +/- 0.00 % Gtotal(l=3) ave= 0.000E+00 +/- 0.00 %  % || Gg(l=0) ave= 4.419E-01 +/- 12.49 % Gg(l=1) ave= 4.568E-01 +/- 11.10 % Gg(l=2) ave= 4.343E-01 +/- 15.20 % Gg(l=3) ave= 0.000E+00 +/- 0.00 %  % || D(l=0) ave= 2.466E+01 +/- 10.88 % D(l=1) ave= 9.486E+00 +/- 0.00 % D(l=2) ave= 1.138E+02 +/- 0.00 % D(l=3) ave= 0.000E+00 +/- 0.00 %  % || S(l=0) ave= 7.011E-05 +/- 0.38 % S(l=1) ave= 6.389E-04 +/- 16.55 % S(l=2) ave= 1.705E-05 +/- 33.44 % S(l=3) ave= 0.000E+00 +/- 0.00 % 
- ... random file  6 Cap(th)  ave= 1.843E+01 b. +/- 17.86 % || Ela(th) ave= 5.239E+00 b. +/- 16.23 % || RIcap ave= 5.17E+01 b. +/- 4.72 % || Macs30 ave= 4.34E+01 b. +/- 4.95 % || Gn^0(l=0) ave= 2.961E-03 +/- 8.19 % Gn^0(l=1) ave= 3.583E-02 +/- 17.01 % Gn^0(l=2) ave= 8.880E-03 +/- 33.23 % Gn^0(l=3) ave= 0.000E+00 +/- 0.00 % || Gtotal(l=0) ave= 4.419E-01 +/- 0.21 % Gtotal(l=1) ave= 4.432E-01 +/- 0.00 % Gtotal(l=2) ave= 4.011E-01 +/- 0.00 % Gtotal(l=3) ave= 0.000E+00 +/- 0.00 %  % || Gg(l=0) ave= 4.496E-01 +/- 12.12 % Gg(l=1) ave= 4.534E-01 +/- 10.52 % Gg(l=2) ave= 4.655E-01 +/- 21.04 % Gg(l=3) ave= 0.000E+00 +/- 0.00 %  % || D(l=0) ave= 2.439E+01 +/- 10.54 % D(l=1) ave= 9.486E+00 +/- 0.00 % D(l=2) ave= 1.138E+02 +/- 0.00 % D(l=3) ave= 0.000E+00 +/- 0.00 %  % || S(l=0) ave= 7.016E-05 +/- 0.41 % S(l=1) ave= 6.613E-04 +/- 16.98 % S(l=2) ave= 1.828E-05 +/- 33.24 % S(l=3) ave= 0.000E+00 +/- 0.00 % 
+ ... nominal file 0 Cap(th)  ave= 1.760E+01 b. +/- 0.00 % || Ela(th) ave= 5.251E+00 b. +/- 0.00 % || RIcap ave= 5.36E+01 b. +/- 0.00 % || Macs30 ave= 1.50E-01 b. +/- 0.00 % || Gn^0(l=0) ave= 2.807E-03 +/- 0.00 % Gn^0(l=1) ave= 3.465E-02 +/- 0.00 % Gn^0(l=2) ave= 8.110E-03 +/- 0.00 % Gn^0(l=3) ave= 0.000E+00 +/- 0.00 % || Gtotal(l=0) ave= 4.413E-01 +/- 0.00 % Gtotal(l=1) ave= 4.432E-01 +/- 0.00 % Gtotal(l=2) ave= 4.011E-01 +/- 0.00 % Gtotal(l=3) ave= 0.000E+00 +/- 0.00 %  % || Gg(l=0) ave= 4.164E-01 +/- 0.00 % Gg(l=1) ave= 4.432E-01 +/- 0.00 % Gg(l=2) ave= 4.011E-01 +/- 0.00 % Gg(l=3) ave= 0.000E+00 +/- 0.00 %  % || D(l=0) ave= 2.277E+01 +/- 0.00 % D(l=1) ave= 9.486E+00 +/- 0.00 % D(l=2) ave= 1.138E+02 +/- 0.00 % D(l=3) ave= 0.000E+00 +/- 0.00 %  % || S(l=0) ave= 7.030E-05 +/- 0.00 % S(l=1) ave= 6.394E-04 +/- 0.00 % S(l=2) ave= 1.669E-05 +/- 0.00 % S(l=3) ave= 0.000E+00 +/- 0.00 % 
+ ... random file  1 Cap(th)  ave= 1.786E+01 b. +/- 1.42 % || Ela(th) ave= 4.707E+00 b. +/- 11.54 % || RIcap ave= 5.45E+01 b. +/- 1.56 % || Macs30 ave= 1.50E-01 b. +/- 0.00 % || Gn^0(l=0) ave= 2.815E-03 +/- 0.29 % Gn^0(l=1) ave= 3.935E-02 +/- 11.95 % Gn^0(l=2) ave= 1.063E-02 +/- 23.71 % Gn^0(l=3) ave= 0.000E+00 +/- 0.00 % || Gtotal(l=0) ave= 4.503E-01 +/- 2.01 % Gtotal(l=1) ave= 4.358E-01 +/- 1.71 % Gtotal(l=2) ave= 3.853E-01 +/- 4.10 % Gtotal(l=3) ave= 0.000E+00 +/- 0.00 %  % || Gg(l=0) ave= 4.254E-01 +/- 2.11 % Gg(l=1) ave= 4.357E-01 +/- 1.71 % Gg(l=2) ave= 3.853E-01 +/- 4.10 % Gg(l=3) ave= 0.000E+00 +/- 0.00 %  % || D(l=0) ave= 2.277E+01 +/- 0.00 % D(l=1) ave= 9.486E+00 +/- 0.00 % D(l=2) ave= 1.138E+02 +/- 0.00 % D(l=3) ave= 0.000E+00 +/- 0.00 %  % || S(l=0) ave= 7.049E-05 +/- 0.28 % S(l=1) ave= 7.260E-04 +/- 11.92 % S(l=2) ave= 2.188E-05 +/- 23.71 % S(l=3) ave= 0.000E+00 +/- 0.00 % 
+ ... random file  2 Cap(th)  ave= 1.955E+01 b. +/- 12.29 % || Ela(th) ave= 5.055E+00 b. +/- 13.10 % || RIcap ave= 5.49E+01 b. +/- 1.73 % || Macs30 ave= 1.50E-01 b. +/- 0.00 % || Gn^0(l=0) ave= 2.818E-03 +/- 0.28 % Gn^0(l=1) ave= 3.675E-02 +/- 14.46 % Gn^0(l=2) ave= 9.325E-03 +/- 29.65 % Gn^0(l=3) ave= 0.000E+00 +/- 0.00 % || Gtotal(l=0) ave= 4.316E-01 +/- 6.38 % Gtotal(l=1) ave= 4.363E-01 +/- 1.40 % Gtotal(l=2) ave= 3.680E-01 +/- 7.52 % Gtotal(l=3) ave= 0.000E+00 +/- 0.00 %  % || Gg(l=0) ave= 4.066E-01 +/- 6.78 % Gg(l=1) ave= 4.363E-01 +/- 1.40 % Gg(l=2) ave= 3.680E-01 +/- 7.52 % Gg(l=3) ave= 0.000E+00 +/- 0.00 %  % || D(l=0) ave= 2.277E+01 +/- 0.00 % D(l=1) ave= 9.486E+00 +/- 0.00 % D(l=2) ave= 1.138E+02 +/- 0.00 % D(l=3) ave= 0.000E+00 +/- 0.00 %  % || S(l=0) ave= 7.057E-05 +/- 0.27 % S(l=1) ave= 6.781E-04 +/- 14.43 % S(l=2) ave= 1.920E-05 +/- 29.65 % S(l=3) ave= 0.000E+00 +/- 0.00 % 
+ ... random file  3 Cap(th)  ave= 2.068E+01 b. +/- 13.84 % || Ela(th) ave= 5.014E+00 b. +/- 11.53 % || RIcap ave= 5.43E+01 b. +/- 2.50 % || Macs30 ave= 1.50E-01 b. +/- 0.01 % || Gn^0(l=0) ave= 2.813E-03 +/- 0.39 % Gn^0(l=1) ave= 3.693E-02 +/- 12.49 % Gn^0(l=2) ave= 9.343E-03 +/- 25.63 % Gn^0(l=3) ave= 0.000E+00 +/- 0.00 % || Gtotal(l=0) ave= 4.228E-01 +/- 6.69 % Gtotal(l=1) ave= 4.192E-01 +/- 7.17 % Gtotal(l=2) ave= 3.931E-01 +/- 12.66 % Gtotal(l=3) ave= 0.000E+00 +/- 0.00 %  % || Gg(l=0) ave= 3.978E-01 +/- 7.11 % Gg(l=1) ave= 4.192E-01 +/- 7.17 % Gg(l=2) ave= 3.931E-01 +/- 12.66 % Gg(l=3) ave= 0.000E+00 +/- 0.00 %  % || D(l=0) ave= 2.277E+01 +/- 0.00 % D(l=1) ave= 9.486E+00 +/- 0.00 % D(l=2) ave= 1.138E+02 +/- 0.00 % D(l=3) ave= 0.000E+00 +/- 0.00 %  % || S(l=0) ave= 7.045E-05 +/- 0.38 % S(l=1) ave= 6.816E-04 +/- 12.47 % S(l=2) ave= 1.923E-05 +/- 25.63 % S(l=3) ave= 0.000E+00 +/- 0.00 % 
+ ... random file  4 Cap(th)  ave= 1.938E+01 b. +/- 18.83 % || Ela(th) ave= 4.940E+00 b. +/- 10.89 % || RIcap ave= 5.35E+01 b. +/- 3.65 % || Macs30 ave= 1.50E-01 b. +/- 0.01 % || Gn^0(l=0) ave= 2.925E-03 +/- 7.65 % Gn^0(l=1) ave= 3.743E-02 +/- 11.34 % Gn^0(l=2) ave= 9.580E-03 +/- 22.90 % Gn^0(l=3) ave= 0.000E+00 +/- 0.00 % || Gtotal(l=0) ave= 3.972E-01 +/- 14.38 % Gtotal(l=1) ave= 4.192E-01 +/- 6.41 % Gtotal(l=2) ave= 4.482E-01 +/- 26.50 % Gtotal(l=3) ave= 0.000E+00 +/- 0.00 %  % || Gg(l=0) ave= 3.713E-01 +/- 15.86 % Gg(l=1) ave= 4.192E-01 +/- 6.41 % Gg(l=2) ave= 4.482E-01 +/- 26.50 % Gg(l=3) ave= 0.000E+00 +/- 0.00 %  % || D(l=0) ave= 2.391E+01 +/- 9.52 % D(l=1) ave= 9.486E+00 +/- 0.00 % D(l=2) ave= 1.138E+02 +/- 0.00 % D(l=3) ave= 0.000E+00 +/- 0.00 %  % || S(l=0) ave= 7.043E-05 +/- 0.34 % S(l=1) ave= 6.909E-04 +/- 11.32 % S(l=2) ave= 1.972E-05 +/- 22.90 % S(l=3) ave= 0.000E+00 +/- 0.00 % 
+ ... random file  5 Cap(th)  ave= 1.793E+01 b. +/- 25.99 % || Ela(th) ave= 4.971E+00 b. +/- 9.97 % || RIcap ave= 5.31E+01 b. +/- 3.89 % || Macs30 ave= 1.50E-01 b. +/- 0.01 % || Gn^0(l=0) ave= 3.003E-03 +/- 8.93 % Gn^0(l=1) ave= 3.707E-02 +/- 10.68 % Gn^0(l=2) ave= 9.400E-03 +/- 21.73 % Gn^0(l=3) ave= 0.000E+00 +/- 0.00 % || Gtotal(l=0) ave= 3.871E-01 +/- 14.68 % Gtotal(l=1) ave= 4.181E-01 +/- 5.90 % Gtotal(l=2) ave= 4.394E-01 +/- 25.08 % Gtotal(l=3) ave= 0.000E+00 +/- 0.00 %  % || Gg(l=0) ave= 3.605E-01 +/- 16.35 % Gg(l=1) ave= 4.180E-01 +/- 5.90 % Gg(l=2) ave= 4.394E-01 +/- 25.08 % Gg(l=3) ave= 0.000E+00 +/- 0.00 %  % || D(l=0) ave= 2.466E+01 +/- 10.88 % D(l=1) ave= 9.486E+00 +/- 0.00 % D(l=2) ave= 1.138E+02 +/- 0.00 % D(l=3) ave= 0.000E+00 +/- 0.00 %  % || S(l=0) ave= 7.049E-05 +/- 0.36 % S(l=1) ave= 6.841E-04 +/- 10.67 % S(l=2) ave= 1.935E-05 +/- 21.73 % S(l=3) ave= 0.000E+00 +/- 0.00 % 
+ ... random file  6 Cap(th)  ave= 1.746E+01 b. +/- 25.55 % || Ela(th) ave= 5.253E+00 b. +/- 15.77 % || RIcap ave= 5.28E+01 b. +/- 3.83 % || Macs30 ave= 1.50E-01 b. +/- 0.01 % || Gn^0(l=0) ave= 3.052E-03 +/- 9.05 % Gn^0(l=1) ave= 3.544E-02 +/- 15.24 % Gn^0(l=2) ave= 8.703E-03 +/- 29.26 % Gn^0(l=3) ave= 0.000E+00 +/- 0.00 % || Gtotal(l=0) ave= 3.916E-01 +/- 13.73 % Gtotal(l=1) ave= 4.270E-01 +/- 7.42 % Gtotal(l=2) ave= 4.292E-01 +/- 24.48 % Gtotal(l=3) ave= 0.000E+00 +/- 0.00 %  % || Gg(l=0) ave= 3.646E-01 +/- 15.22 % Gg(l=1) ave= 4.270E-01 +/- 7.42 % Gg(l=2) ave= 4.292E-01 +/- 24.48 % Gg(l=3) ave= 0.000E+00 +/- 0.00 %  % || D(l=0) ave= 2.521E+01 +/- 11.17 % D(l=1) ave= 9.486E+00 +/- 0.00 % D(l=2) ave= 1.138E+02 +/- 0.00 % D(l=3) ave= 0.000E+00 +/- 0.00 %  % || S(l=0) ave= 7.040E-05 +/- 0.45 % S(l=1) ave= 6.542E-04 +/- 15.25 % S(l=2) ave= 1.792E-05 +/- 29.26 % S(l=3) ave= 0.000E+00 +/- 0.00 % 
  ... Histogram plot for thermal (n,g)
  ... Write covariances  ... MT1  ... plot correlations
  ... MT2  ... MT102 
@@ -325,46 +327,46 @@ Thermal file; Could not open file /Users/koning/tares-1.8/source/Module//../../i
 
  ================================================
  ============== From 6 random values === start ======
- Thermal (n,tot) xs  0 K =  23.6658 b. +/- 3.22605 b. ( 13.6317 %) skew= +1.14 +/- 0.79
- Thermal (n,el) xs   0 K =  5.2393 b. +/- 0.850355 b. ( 16.2303 %) skew= +0.11 +/- 0.79
- Thermal (n,g) xs    0 K =  18.4265 b. +/- 3.29126 b. ( 17.8616 %) skew= +1.69 +/- 0.79
- RI      (n,g)       0 K =  51.7023 b. +/- 2.44083 b. ( 4.72094 %) 
- MACS    (n,g)       0 K (at Emacs= 30000 eV) =  43.4063 b. +/- 2.14913 b. ( 4.95121 %) 
- Ave. Gtotal  L=0        =  4.419E-01 +/- 0.21 %
- Ave. Gn^(0)  L=0        =  2.961E-03 +/- 8.19 %
- Ave. Gg      L=0        =  4.496E-01 +/- 12.12 %
- Ave. D       L=0        =  2.439E+01 +/- 10.54 %
- Ave. S       L=0        =  7.016E-05 +/- 0.41 %
- Ave. Gtotal  L=1        =  4.432E-01 +/- 0.00 %
- Ave. Gn^(1)  L=1        =  3.583E-02 +/- 17.01 %
- Ave. Gg      L=1        =  4.534E-01 +/- 10.52 %
+ Thermal (n,tot) xs  0 K =  22.7142 b. +/- 4.46698 b. ( 19.666 %) skew= +0.10 +/- 0.79
+ Thermal (n,el) xs   0 K =  5.25258 b. +/- 0.828285 b. ( 15.7691 %) skew= +0.85 +/- 0.79
+ Thermal (n,g) xs    0 K =  17.4616 b. +/- 4.46149 b. ( 25.5503 %) skew= +0.13 +/- 0.79
+ RI      (n,g)       0 K =  52.8004 b. +/- 2.02127 b. ( 3.82814 %) 
+ MACS    (n,g)       0 K (at Emacs= 30000 eV) =  0.14981 b. +/- 1.30913e-05 b. ( 0.00873863 %) 
+ Ave. Gtotal  L=0        =  3.916E-01 +/- 13.73 %
+ Ave. Gn^(0)  L=0        =  3.052E-03 +/- 9.05 %
+ Ave. Gg      L=0        =  3.646E-01 +/- 15.22 %
+ Ave. D       L=0        =  2.521E+01 +/- 11.17 %
+ Ave. S       L=0        =  7.040E-05 +/- 0.45 %
+ Ave. Gtotal  L=1        =  4.270E-01 +/- 7.42 %
+ Ave. Gn^(1)  L=1        =  3.544E-02 +/- 15.24 %
+ Ave. Gg      L=1        =  4.270E-01 +/- 7.42 %
  Ave. D       L=1        =  9.486E+00 +/- 0.00 %
- Ave. S       L=1        =  6.613E-04 +/- 16.98 %
- Ave. Gtotal  L=2        =  4.011E-01 +/- 0.00 %
- Ave. Gn^(2)  L=2        =  8.880E-03 +/- 33.23 %
- Ave. Gg      L=2        =  4.655E-01 +/- 21.04 %
+ Ave. S       L=1        =  6.542E-04 +/- 15.25 %
+ Ave. Gtotal  L=2        =  4.292E-01 +/- 24.48 %
+ Ave. Gn^(2)  L=2        =  8.703E-03 +/- 29.26 %
+ Ave. Gg      L=2        =  4.292E-01 +/- 24.48 %
  Ave. D       L=2        =  1.138E+02 +/- 0.00 %
- Ave. S       L=2        =  1.828E-05 +/- 33.24 %
+ Ave. S       L=2        =  1.792E-05 +/- 29.26 %
 
- Expected Thermal (n,g) (syst or meas)= 21.49 b. +/- 15.043 b. nominal: 17.6028 b.
- ratio Calculated/expected thermal (n,g): 0.86 ratio DCalculated/Dexpected: 0.22 ratio Calculated/Nominal: 1.05
+ Expected Thermal (n,g) (syst or meas)= 21.4883 b. +/- 15.0418 b. nominal: 17.6028 b.
+ ratio Calculated/expected thermal (n,g): 0.81 ratio DCalculated/Dexpected: 0.30 ratio Calculated/Nominal: 0.99
  ============== From 6 random values ===== stop ======
  ================================================
  ... Calculation of (n,a) and (n,p) cross sections at 300 K
  ... thermal (n,a) cross section is 0.000379583 +/- 0.000189791 b.
- ... thermal (n,a) cross section is 0.000698646 b. (random case 1)
- ... thermal (n,a) cross section is 0.00101765 b. (random case 2)
- ... thermal (n,a) cross section is 0.00133665 b. (random case 3)
- ... thermal (n,a) cross section is 0.00165565 b. (random case 4)
- ... thermal (n,a) cross section is 0.00197465 b. (random case 5)
- ... thermal (n,a) cross section is 0.00229365 b. (random case 6)
+ ... thermal (n,a) cross section is 0.000643299 b. (random case 1)
+ ... thermal (n,a) cross section is 0.000209988 b. (random case 2)
+ ... thermal (n,a) cross section is 0.000536532 b. (random case 3)
+ ... thermal (n,a) cross section is 0.000853773 b. (random case 4)
+ ... thermal (n,a) cross section is 0.000361443 b. (random case 5)
+ ... thermal (n,a) cross section is 0.000674099 b. (random case 6)
  ... thermal (n,p) cross section is 0.000379583 +/- 0.000189791 b.
- ... thermal (n,p) cross section is 0.000698646 b. (random case 1)
- ... thermal (n,p) cross section is 0.00101765 b. (random case 2)
- ... thermal (n,p) cross section is 0.00133665 b. (random case 3)
- ... thermal (n,p) cross section is 0.00165565 b. (random case 4)
- ... thermal (n,p) cross section is 0.00197465 b. (random case 5)
- ... thermal (n,p) cross section is 0.00229365 b. (random case 6)
+ ... thermal (n,p) cross section is 0.000184234 b. (random case 1)
+ ... thermal (n,p) cross section is 0.000734264 b. (random case 2)
+ ... thermal (n,p) cross section is 0.000261399 b. (random case 3)
+ ... thermal (n,p) cross section is 0.000332139 b. (random case 4)
+ ... thermal (n,p) cross section is 0.000535754 b. (random case 5)
+ ... thermal (n,p) cross section is 0.000477132 b. (random case 6)
  ... Rewrite index for MF2
  ... Write text for MF1 in file mf1.tares.txt
  ... plotting cross sections for the MF1
@@ -372,9 +374,9 @@ Thermal file; Could not open file /Users/koning/tares-1.8/source/Module//../../i
 
 
 ================== summary ==================
- Thermal (n,tot) xs = 22.8581 b. 
+ Thermal (n,tot) xs = 22.8542 b. 
  Thermal (n,el)  xs = 5.25068 b. 
- Thermal (n,g)   xs = 17.6028 b. (meas/sys: 21.49 b.)
+ Thermal (n,g)   xs = 17.6028 b. (meas/sys: 21.4883 b.)
  At 300 K (thermal adjustment): (n,el) = 5.2775 b., (n,g) = 17.6114 b.
 
  RI      (n,g)      = 53.6141 b. (meas or sys: - b.)
@@ -392,7 +394,7 @@ Thermal file; Could not open file /Users/koning/tares-1.8/source/Module//../../i
   -                                                           -
   -------------------------------------------------------------
 
-   Running time:       7 seconds
+   Running time:       8 seconds
 
- End time: Wed Oct  7 10:05:09 2026
+ End time: Fri Oct  9 12:53:17 2026
 

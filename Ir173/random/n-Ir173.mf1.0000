@@ -15,14 +15,26 @@
                                                                  
   MF2:  Resolved resonance range  (RRR)                          
        The RRR was generated with TARES-1.8 , compiled on         
-       Oct  7 2026, 09:32:19 at Villigen   , Switzerland. The RRR
-       expands from 0 to 5.800000E+0 eV. A total of 
-       1 l-value is used and 97 resonances. The resonance 
+       Oct  8 2026, 18:36:06 at Villigen   , Switzerland. The RRR
+       expands from 0 to 5.835695E+0 eV. A total of 
+       2 l-values are used and 99 resonances. The resonance 
        formalism is multi-level Breit Wigner (MLBW).
        The TARES database for the measured resonances is         
         ->  default up to 5.800000 eV.                                          
-       The unresolved resonance range is obtained from the TALYS 
-       code.                                                     
+       Above this energy, the ladder approach is used.           
+       The ladder approach from the CALENDF code is used to      
+       generate statistical resonances in the unresolved         
+       resonance range. Therefore, the URR is translated into    
+       resolved resonance range. Explanations about the method   
+       can be found in the CALENDF manual: CEA-Report CEA-R-6277 
+       "CALENDF-2010: User manual" by J.C. Sublet, P. Ribon and
+       M. Coste-Delcaux.                                         
+       The method of creating statistical resonances in the      
+       URR region is described in: "From average parameters to  
+       statistical resolved resonances", D. Rochman et al.,     
+       Annals of Nucl. Ene. 51 (2013) 60.                        
+       The s-wave average level spacing is 0.020112 eV and  
+       the s-wave neutron strength is 0.000282 1e-4.        
                                                                  
   MF33 in the resonance range:                                   
   The MF33 in the resonance range is obtained by using a number  
@@ -38,12 +50,12 @@
                Average parameters from INTER-8.05                
                                                                  
      ****************************************************        
-     *   Thermal (n,g) xs =  1.825330E+02 b. (MF2 only) *        
-     *   RI      (n,g)    =  7.976430E+02 b. (MF2 only) *        
+     *   Thermal (n,g) xs =  2.270200E+02 b. (MF2 only) *        
+     *   RI      (n,g)    =  9.981820E+02 b. (MF2 only) *        
      *   MACS 30 keV      =  4.804500E+00 b. (MF2 only) *        
      *                                                  *        
-     *   Thermal (n,el) xs = 6.884490E+00 b. (MF2 only) *        
-     *   RI      (n,el)    = 1.619500E+01 b. (MF2 only) *        
+     *   Thermal (n,el) xs = 6.471190E+00 b. (MF2 only) *        
+     *   RI      (n,el)    = 1.619520E+01 b. (MF2 only) *        
      ****************************************************        
                                                                  
                                                                  
@@ -72,23 +84,23 @@
                                                            
                                                             
                                                            
-                            Ir173(n,g)                     
-    100000 +-------------------------------------------+   
-           |+  +      +      +       +      +      +  +|   
-     10000 |AAA                          (n,g)    A  +-|   
-           |+ AAAAA                                   +|   
-      1000 |-+    AAAA          A                    +-|   
-           |+        AAAAA      AAAAA                 +|   
-       100 |-+           AA         AAAAA            +-|   
-        10 |++            AAA           AAAAA        ++|   
-           |+              AAAAAA           AAAA      +|   
-         1 |++               AAAA               AAAAAA+|   
-           |+                  A                     AA|   
-       0.1 |++                                       +A|   
-           |+  +      +      +       +      +      +  +|   
-      0.01 +-------------------------------------------+   
-           0.000100.010001.00000100.0010000.1000000.000000 
-                            Energy (eV)                    
+                           Ir173(n,g)                      
+    10000 +--------------------------------------------+   
+          |AAAA      +       +      +       +      +  +|   
+     1000 |++  AAAA                      (n,g)    A  ++|   
+          |+      AAAAA AA  A   AA                    +|   
+      100 |++         AAAAA AAAA AAAAA               ++|   
+          |+              AAAAAAA    AAAA             +|   
+       10 |++                AAAA       AAAA         ++|   
+          |+                               AAAA       +|   
+          |+                                   AAAAAA +|   
+        1 |-+                                       AAA|   
+          |+                                          A|   
+      0.1 |-+                                        +-|   
+          |+  +      +       +      +       +      +  +|   
+     0.01 +--------------------------------------------+   
+          0.000100.0100001.0000100.00010000.1000000.000000 
+                           Energy (eV)                     
                                                            
                                                                  
                                                                  
